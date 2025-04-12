@@ -69,7 +69,7 @@ def show_progress_graph():
     if total == 0:
         return
 
-    fig, ax = plt.subplots(1, 2, figsize=(10, 4))
+
 
     # 円グラフ
     ax[0].pie([done, total - done], labels=["完了", "未完了"], autopct="%1.1f%%", colors=["#4CAF50", "#FF6F61"])
@@ -141,7 +141,7 @@ st.divider()
 
 # グラフと保存
 st.subheader("完了率グラフ")
-show_progress_graph()
+
 
 st.subheader("タスクデータの保存")
 st.button("Excelとして保存", on_click=export_to_excel)
